@@ -1,0 +1,168 @@
+{
+  "originHash" : "7f59ed1b2848aa82c12f51d0a7b3645d0ccaf4cdb45960097be4ce9848497bf7",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "iqkeyboardcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardCore.git",
+      "state" : {
+        "revision" : "ae9d197f1d8c491b312e30eafb0193d164519c5a",
+        "version" : "1.0.7"
+      }
+    },
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "42e0d94355eba5448fd250f7229d150d268dc3ab",
+        "version" : "8.0.0"
+      }
+    },
+    {
+      "identity" : "iqkeyboardnotification",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardNotification.git",
+      "state" : {
+        "revision" : "25c6a83380042141d9a2f80cdb2832595a7bf6bc",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "iqkeyboardreturnmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardReturnManager.git",
+      "state" : {
+        "revision" : "bc5c272e4d37cc217a3d10d052557a1916c09cf9",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "iqkeyboardtoolbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardToolbar.git",
+      "state" : {
+        "revision" : "78ccb63857a03334ecfcba566f8f504015965ee3",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "iqkeyboardtoolbarmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardToolbarManager.git",
+      "state" : {
+        "revision" : "ec26659062e6b9bc65e26643269f38eca46846d7",
+        "version" : "1.1.3"
+      }
+    },
+    {
+      "identity" : "iqtextinputviewnotification",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQTextInputViewNotification.git",
+      "state" : {
+        "revision" : "4347f8eb6bf8880014606684105e447229cc29ea",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "iqtextview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQTextView.git",
+      "state" : {
+        "revision" : "76f514eba5218bdf67659168ba227c77da5f75fe",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "supabase-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase/supabase-swift.git",
+      "state" : {
+        "revision" : "e2ca2908d80e0b5e2e22659cfe9af4651cebf7c2",
+        "version" : "2.26.0"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "ae33e5941bb88d88538d0a6b19ca0b01e6c76dcf",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swift-clocks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-clocks",
+      "state" : {
+        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "82a4ae7170d98d8538ec77238b7eb8e7199ef2e8",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "a6ce32a18b81b04ce7e897d1d98df6eb2da04786",
+        "version" : "3.12.2"
+      }
+    },
+    {
+      "identity" : "swift-http-types",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-http-types.git",
+      "state" : {
+        "revision" : "ef18d829e8b92d731ad27bb81583edd2094d1ce3",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "trianglzotpview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TrianglZ/TrianglZOTPView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c6c89cf756f2dd05bd53281bb0252de23a442367"
+      }
+    },
+    {
+      "identity" : "tzchangelanguage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TrianglZ/TZChangeLanguage",
+      "state" : {
+        "revision" : "4343903488e23c48bd5e1f2582a13d484babc4a8",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "39de59b2d47f7ef3ca88a039dff3084688fe27f4",
+        "version" : "1.5.2"
+      }
+    }
+  ],
+  "version" : 3
+}

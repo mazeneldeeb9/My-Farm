@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		E823BA192D84D1B10069B1BD /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA182D84D1B10069B1BD /* Auth */; };
+		E823BA1B2D84D1B10069B1BD /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA1A2D84D1B10069B1BD /* Functions */; };
+		E823BA1D2D84D1B10069B1BD /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA1C2D84D1B10069B1BD /* PostgREST */; };
+		E823BA1F2D84D1B10069B1BD /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA1E2D84D1B10069B1BD /* Realtime */; };
+		E823BA212D84D1B10069B1BD /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA202D84D1B10069B1BD /* Storage */; };
+		E823BA232D84D1B10069B1BD /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = E823BA222D84D1B10069B1BD /* Supabase */; };
+		E8783F372D6241C2008604C0 /* TZChangeLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = E8783F362D6241C2008604C0 /* TZChangeLanguage */; };
+		E8958F8F2D624296002DC439 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E8958F8E2D624296002DC439 /* Alamofire */; };
+		E8E194962D6241900018594E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E8E194952D6241900018594E /* IQKeyboardManagerSwift */; };
+		E8F431812D6242020070E211 /* TrianglzOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = E8F431802D6242020070E211 /* TrianglzOTPView */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8AA02592D6240620095D2C3 /* My Farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Farm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E8AA025B2D6240620095D2C3 /* My Farm */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "My Farm";
-			sourceTree = "<group>";
-		};
+		E8AA025B2D6240620095D2C3 /* My Farm */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "My Farm"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +32,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E823BA232D84D1B10069B1BD /* Supabase in Frameworks */,
+				E823BA1B2D84D1B10069B1BD /* Functions in Frameworks */,
+				E8F431812D6242020070E211 /* TrianglzOTPView in Frameworks */,
+				E823BA1D2D84D1B10069B1BD /* PostgREST in Frameworks */,
+				E823BA1F2D84D1B10069B1BD /* Realtime in Frameworks */,
+				E8958F8F2D624296002DC439 /* Alamofire in Frameworks */,
+				E8783F372D6241C2008604C0 /* TZChangeLanguage in Frameworks */,
+				E823BA212D84D1B10069B1BD /* Storage in Frameworks */,
+				E823BA192D84D1B10069B1BD /* Auth in Frameworks */,
+				E8E194962D6241900018594E /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,16 @@
 			);
 			name = "My Farm";
 			packageProductDependencies = (
+				E8E194952D6241900018594E /* IQKeyboardManagerSwift */,
+				E8783F362D6241C2008604C0 /* TZChangeLanguage */,
+				E8F431802D6242020070E211 /* TrianglzOTPView */,
+				E8958F8E2D624296002DC439 /* Alamofire */,
+				E823BA182D84D1B10069B1BD /* Auth */,
+				E823BA1A2D84D1B10069B1BD /* Functions */,
+				E823BA1C2D84D1B10069B1BD /* PostgREST */,
+				E823BA1E2D84D1B10069B1BD /* Realtime */,
+				E823BA202D84D1B10069B1BD /* Storage */,
+				E823BA222D84D1B10069B1BD /* Supabase */,
 			);
 			productName = "My Farm";
 			productReference = E8AA02592D6240620095D2C3 /* My Farm.app */;
@@ -86,6 +115,7 @@
 				};
 			};
 			buildConfigurationList = E8AA02542D6240620095D2C3 /* Build configuration list for PBXProject "My Farm" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,7 +124,13 @@
 			);
 			mainGroup = E8AA02502D6240620095D2C3;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				E8E194942D6241900018594E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E8783F352D6241C2008604C0 /* XCRemoteSwiftPackageReference "TZChangeLanguage" */,
+				E8F4317F2D6242020070E211 /* XCRemoteSwiftPackageReference "TrianglZOTPView" */,
+				E8958F8D2D624296002DC439 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = E8AA025A2D6240620095D2C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +362,102 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		E8783F352D6241C2008604C0 /* XCRemoteSwiftPackageReference "TZChangeLanguage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TrianglZ/TZChangeLanguage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E8958F8D2D624296002DC439 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		E8E194942D6241900018594E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		E8F4317F2D6242020070E211 /* XCRemoteSwiftPackageReference "TrianglZOTPView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TrianglZ/TrianglZOTPView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E823BA182D84D1B10069B1BD /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		E823BA1A2D84D1B10069B1BD /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		E823BA1C2D84D1B10069B1BD /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		E823BA1E2D84D1B10069B1BD /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		E823BA202D84D1B10069B1BD /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		E823BA222D84D1B10069B1BD /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823BA172D84D1B10069B1BD /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		E8783F362D6241C2008604C0 /* TZChangeLanguage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8783F352D6241C2008604C0 /* XCRemoteSwiftPackageReference "TZChangeLanguage" */;
+			productName = TZChangeLanguage;
+		};
+		E8958F8E2D624296002DC439 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8958F8D2D624296002DC439 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E8E194952D6241900018594E /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8E194942D6241900018594E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		E8F431802D6242020070E211 /* TrianglzOTPView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8F4317F2D6242020070E211 /* XCRemoteSwiftPackageReference "TrianglZOTPView" */;
+			productName = TrianglzOTPView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8AA02512D6240620095D2C3 /* Project object */;
 }

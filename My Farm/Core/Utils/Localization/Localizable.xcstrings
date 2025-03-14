@@ -1,0 +1,649 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    " (Optional)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " (اختياري)"
+          }
+        }
+      }
+    },
+    "%@" : {
+
+    },
+    "%@ " : {
+
+    },
+    "%@ %@ " : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@ "
+          }
+        }
+      }
+    },
+    "%@ Status" : {
+
+    },
+    "%lld" : {
+
+    },
+    "$%@" : {
+
+    },
+    "1.0.0" : {
+
+    },
+    "28°C" : {
+
+    },
+    "70%" : {
+
+    },
+    "Add Task" : {
+
+    },
+    "Already have an account?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل لديك حساب بالفعل؟"
+          }
+        }
+      }
+    },
+    "Arabic" : {
+
+    },
+    "Are you sure you want to cancel account verification?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل أنت متأكد أنك تريد إلغاء التحقق من الحساب؟"
+          }
+        }
+      }
+    },
+    "Ask Now" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل الآن"
+          }
+        }
+      }
+    },
+    "At least 8 characters" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب أن تحتوي على 8 أحرف على الأقل"
+          }
+        }
+      }
+    },
+    "At least one digit & one special character" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب أن تحتوي على رقم واحد وحرف خاص واحد على الأقل"
+          }
+        }
+      }
+    },
+    "Bringing you closer to nature! Learn about sustainable farming, connect with passionate growers, and enjoy farm-to-table freshness." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نقربكم أكثر من الطبيعة! تعرفوا على الزراعة المستدامة، وتواصلوا مع المزارعين الشغوفين، واستمتعوا بنضارة المنتجات من المزرعة إلى المائدة."
+          }
+        }
+      }
+    },
+    "Buy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شراء"
+          }
+        }
+      }
+    },
+    "Buy your Package Now!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ باقتك الآن!"
+          }
+        }
+      }
+    },
+    "by %@" : {
+
+    },
+    "Confirm" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكيد"
+          }
+        }
+      }
+    },
+    "Create New Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء كلمة مرور جديدة"
+          }
+        }
+      }
+    },
+    "Create Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انشئ كلمة سر"
+          }
+        }
+      }
+    },
+    "Dark Mode" : {
+
+    },
+    "Didn’t receive a code?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم تستلم الرمز؟"
+          }
+        }
+      }
+    },
+    "Don’t have an account?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس لديك حساب؟"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني"
+          }
+        }
+      }
+    },
+    "Email address already registered. Please log in from that." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني مسجل بالفعل. يرجى تسجيل الدخول بدلاً من ذلك."
+          }
+        }
+      }
+    },
+    "Empty field" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حقل فارغ"
+          }
+        }
+      }
+    },
+    "Enable Notifications" : {
+
+    },
+    "English" : {
+
+    },
+    "Enter your email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل بريدك الإلكتروني"
+          }
+        }
+      }
+    },
+    "Enter your Email, we'll send a verification code via Email." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل بريدك الإلكتروني، سنرسل لك رمز التحقق عبر البريد الإلكتروني."
+          }
+        }
+      }
+    },
+    "Enter your password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل كلمة المرور"
+          }
+        }
+      }
+    },
+    "Favorites" : {
+
+    },
+    "Forgot Password?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نسيت كلمة المرور؟"
+          }
+        }
+      }
+    },
+    "Humidity: 65%" : {
+
+    },
+    "Invalid Email or password." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني أو كلمة المرور غير صحيحة."
+          }
+        }
+      }
+    },
+    "Invalid password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمة المرور غير صحيحة"
+          }
+        }
+      }
+    },
+    "Join us in cultivating a greener future! Explore innovative farming techniques, support local agriculture, and experience the essence of farm life." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حل قانوني شامل يجمع بين الشفافية والراحة!"
+          }
+        }
+      }
+    },
+    "Last Questions Asked" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آخر الأسئلة المطروحة"
+          }
+        }
+      }
+    },
+    "Logout" : {
+
+    },
+    "Manage your farm efficiently with AI-powered insights" : {
+
+    },
+    "Marketplace" : {
+
+    },
+    "Mix of upper & lower case characters" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مزيج من الأحرف الكبيرة والصغيرة"
+          }
+        }
+      }
+    },
+    "My Farm" : {
+
+    },
+    "Name" : {
+
+    },
+    "new here?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جديد هنا؟"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التالي"
+          }
+        }
+      }
+    },
+    "Next watering: Today" : {
+
+    },
+    "No favorites yet" : {
+
+    },
+    "Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمة السر"
+          }
+        }
+      }
+    },
+    "Please provide correct email address" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرجى إدخال عنوان بريد إلكتروني صحيح"
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Remembered Password?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل تذكرت كلمة المرور؟"
+          }
+        }
+      }
+    },
+    "Resend" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة إرسال"
+          }
+        }
+      }
+    },
+    "Resend in 00:" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة الإرسال خلال 00:"
+          }
+        }
+      }
+    },
+    "Reset Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة تعيين كلمة المرور"
+          }
+        }
+      }
+    },
+    "Score" : {
+
+    },
+    "Search crops" : {
+
+    },
+    "Select a Crop" : {
+
+    },
+    "Select Language" : {
+
+    },
+    "Send OTP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرسال رمز التحقق"
+          }
+        }
+      }
+    },
+    "Settings" : {
+
+    },
+    "Sign In" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الدخول"
+          }
+        }
+      }
+    },
+    "Sign Up" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء حساب"
+          }
+        }
+      }
+    },
+    "Sign Up Now!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء حساب الأن!"
+          }
+        }
+      }
+    },
+    "Submit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرسال"
+          }
+        }
+      }
+    },
+    "Sunny" : {
+
+    },
+    "Terms of Service" : {
+
+    },
+    "Verify" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقق"
+          }
+        }
+      }
+    },
+    "Verify your Email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل لديك حساب بالفعل؟"
+          }
+        }
+      }
+    },
+    "Version" : {
+
+    },
+    "We have sent a verification code to email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لقد أرسلنا رمز التحقق إلى حسابك الاكتروني"
+          }
+        }
+      }
+    },
+    "Welcome Abroad!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أهلا معانا!"
+          }
+        }
+      }
+    },
+    "Welcome to our farming community! Discover the beauty of agriculture, connect with local farmers, and enjoy fresh, sustainable produce." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحبًا بكم في مجتمعنا الزراعي! اكتشفوا جمال الزراعة، تواصلوا مع المزارعين المحليين، واستمتعوا بالمنتجات الطازجة والمستدامة."
+          }
+        }
+      }
+    },
+    "Welcome!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحبًا!"
+          }
+        }
+      }
+    },
+    "Who seeks advice will not fail." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما خاب مَن استشار"
+          }
+        }
+      }
+    },
+    "Wind: 8 km/h" : {
+
+    },
+    "Your trusted AI Legal Assistant – intelligent, efficient, and always ready to help!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساعدك القانوني الذكي بالذكاء الاصطناعي – موثوق، فعال، ودائمًا جاهز لمساعدتك!"
+          }
+        }
+      }
+    },
+    "عربي" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
