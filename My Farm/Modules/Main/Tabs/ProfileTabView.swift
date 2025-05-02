@@ -59,10 +59,10 @@ struct ProfileTabView: View {
                             Divider()
                             
                             HStack {
-                                Text("Score")
+                                Text("Phone Number")
                                     .foregroundColor(.gray)
                                 Spacer()
-                                Text("\(userManager.currentUser?.score ?? 0)")
+                                Text(userManager.currentUser?.phoneNumber ?? "Not set")
                                     .foregroundColor(.secondaryGreen)
                             }
                         }

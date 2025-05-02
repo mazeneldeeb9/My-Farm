@@ -27,7 +27,7 @@ struct CropDetailView: View {
                         let height = geometry.size.height
                         let offset = min(0, -minY)
                         
-                        Image(crop.image)
+                        Image(crop.imageName)
                             .resizable()
                             .scaledToFill()
                             .frame(width: geometry.size.width, height: height + (minY > 0 ? minY : 0))
@@ -65,9 +65,9 @@ struct CropDetailView: View {
                         
                         // Growing information
                         infoSection(title: "Growing Information", items: [
-                            ("Growth Period", crop.growthPeriod, "calendar"),
-                            ("Water Requirements", crop.waterRequirements, "drop.fill"),
-                            ("Sun Requirements", crop.sunRequirements, "sun.max.fill"),
+                            ("Growth Period", String(format: "%.2f", crop.growthProgress), "calendar"),
+                            ("Water Requirements", crop.wateringFrequency, "drop.fill"),
+                            ("Sun Requirements", crop.sunExposure, "sun.max.fill"),
                             ("Soil Type", crop.soilType, "leaf.fill"),
                             ("Harvest Time", crop.harvestTime, "scissors")
                         ])
@@ -78,7 +78,7 @@ struct CropDetailView: View {
                             systemImageName: "lightbulb.fill",
                             imageColor: .yellow
                         ) {
-                            Text(crop.tips)
+                            Text(crop.idealTemperature)
                                 .font(.system(size: 14))
                                 .foregroundColor(.gray)
                                 .padding(.top, 8)

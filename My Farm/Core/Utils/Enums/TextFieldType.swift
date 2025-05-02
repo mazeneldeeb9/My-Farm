@@ -12,8 +12,10 @@ import SwiftUI
 enum TextFieldType {
 
     case email
-    case password, createPassword
-    case ai
+    case password, createPassword, confirmPassword
+    case fullName
+    case phoneNumber
+    
 
     func getTextFieldTrailingIcon(isSecureField: Bool = false) -> String {
         switch self {
@@ -28,17 +30,10 @@ enum TextFieldType {
         switch self {
         case .email:
             return .emailAddress
+        case .phoneNumber:
+            return .phonePad
         default:
             return .default
-        }
-    }
-
-    func passwordFieldTypeCheck() -> Bool {
-        switch self {
-        case .password, .createPassword:
-            return true
-        default:
-            return false
         }
     }
 
@@ -48,8 +43,14 @@ enum TextFieldType {
             return Constants.TextField.passwordTitle
         case .createPassword:
             return Constants.TextField.createPasswordTitle
+        case .confirmPassword:
+            return Constants.TextField.confirmPasswordTitle
         case .email:
             return Constants.TextField.emailTitle
+        case .fullName:
+            return Constants.TextField.fullName
+        case .phoneNumber:
+            return Constants.TextField.phoneNumber
         default:
             return ""
         }
@@ -59,10 +60,23 @@ enum TextFieldType {
         switch self {
         case .password, .createPassword:
             return Constants.TextField.passwordPlaceholder
+        case .confirmPassword:
+            return Constants.TextField.confirmPasswordPlaceholder
         case .email:
             return Constants.TextField.emailPlaceholder
-        case .ai:
-            return Constants.Home.askNow
+        case .fullName:
+            return Constants.TextField.fullNamePlaceholder
+        case .phoneNumber:
+            return Constants.TextField.phoneNumberPlaceholder
+        }
+    }
+
+    func passwordFieldTypeCheck() -> Bool {
+        switch self {
+        case .password, .createPassword, .confirmPassword:
+            return true
+        default:
+            return false
         }
     }
 
@@ -76,8 +90,12 @@ enum TextFieldType {
             return text.trimmed.isValidEmail ? "" : Constants.TextField.invalidEmail
         case .password, .createPassword:
             return text.isValidStrongPassword ? "" : Constants.TextField.invalidPassword
-        case .ai:
-            return text.isEmpty ? "" : Constants.TextField.emptyField
+        case .fullName:
+            return !text.isEmpty ? "" : Constants.TextField.invalidFullName
+        case .phoneNumber:
+            return text.count >= 10 ? "" : Constants.TextField.invalidPhoneNumber
+        default:
+            return ""
         }
     }
 
@@ -94,10 +112,12 @@ enum TextFieldType {
         switch self {
         case .email:
             return .emailAddress
-        case .password, .createPassword:
+        case .password, .createPassword, .confirmPassword:
             return .password
-        case .ai:
-            return nil
+        case .fullName:
+            return .name
+        case .phoneNumber:
+            return .telephoneNumber
         }
     }
 }

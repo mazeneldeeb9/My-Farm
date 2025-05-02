@@ -20,7 +20,6 @@ struct CropSelectionScreen: View {
         ZStack {
             // Carousel view
             CropCarouselView(
-                crops: crops,
                 selectedCropIndex: $selectedCropIndex,
                 isShowingDetail: $isShowingDetail
             )

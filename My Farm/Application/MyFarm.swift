@@ -28,23 +28,21 @@ struct My_FarmApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainScreen()
-
-//            Group {
-//                if isUserLoggedIn {
-//                    MainScreen()
-//                        .onReceive(NotificationCenter.default.publisher(for: .userLoggedOut)) { _ in
-//                            isUserLoggedIn = false
-//                        }
-//                } else {
-//                    NavigationStack {
-//                        WelcomeScreen()
-//                    }
-//                    .onReceive(NotificationCenter.default.publisher(for: .userLoggedIn)) { _ in
-//                        isUserLoggedIn = true
-//                    }
-//                }
-//            }
+            Group {
+                if isUserLoggedIn {
+                    MainScreen()
+                        .onReceive(NotificationCenter.default.publisher(for: .userLoggedOut)) { _ in
+                            isUserLoggedIn = false
+                        }
+                } else {
+                    NavigationStack {
+                        WelcomeScreen()
+                    }
+                    .onReceive(NotificationCenter.default.publisher(for: .userLoggedIn)) { _ in
+                        isUserLoggedIn = true
+                    }
+                }
+            }
             .background(.primaryGreen)
             .tint(.secondaryGreen)
         }

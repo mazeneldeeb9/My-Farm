@@ -8,23 +8,13 @@
 import SwiftUI
 
 struct MarketplaceTabView: View {
+    @StateObject private var userManager = UserManager.shared
     @State private var searchText = ""
     @State private var selectedCategory: CropCategory = .all
-    
-    // Sample data
-    private let cropListings = [
-        CropListing(id: 1, name: "Organic Tomatoes", seller: "Green Farms", price: 2.99, image: "tomato", category: .vegetables),
-        CropListing(id: 2, name: "Fresh Corn", seller: "Harvest Fields", price: 1.49, image: "corn", category: .vegetables),
-        CropListing(id: 3, name: "Premium Wheat", seller: "Golden Grains", price: 3.99, image: "wheat", category: .grains),
-        CropListing(id: 4, name: "Russet Potatoes", seller: "Earth Bounty", price: 0.99, image: "potato", category: .vegetables),
-        CropListing(id: 5, name: "Organic Apples", seller: "Orchard Fresh", price: 2.49, image: "apple", category: .fruits),
-        CropListing(id: 6, name: "Strawberries", seller: "Berry Good", price: 3.99, image: "strawberry", category: .fruits),
-        CropListing(id: 7, name: "Barley Seeds", seller: "Seed Master", price: 5.99, image: "barley", category: .seeds),
-        CropListing(id: 8, name: "Sunflower Seeds", seller: "Sunny Fields", price: 4.49, image: "sunflower", category: .seeds)
-    ]
+    @State private var isLoading = true
     
     var filteredCrops: [CropListing] {
-        var filtered = cropListings
+        var filtered = userManager.marketplaceCrops
         
         if !searchText.isEmpty {
             filtered = filtered.filter { $0.name.lowercased().contains(searchText.lowercased()) }
@@ -79,21 +69,55 @@ struct MarketplaceTabView: View {
                     .padding(.vertical, 10)
                 }
                 
-                // Crop listings
-                ScrollView {
-                    LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: 16),
-                        GridItem(.flexible(), spacing: 16)
-                    ], spacing: 16) {
-                        ForEach(filteredCrops) { crop in
-                            CropListingCard(crop: crop)
+                if isLoading {
+                    Spacer()
+                    ProgressView()
+                        .scaleEffect(1.5)
+                        .progressViewStyle(CircularProgressViewStyle(tint: .primaryGreen))
+                    Spacer()
+                } else if filteredCrops.isEmpty {
+                    Spacer()
+                    Text("No crops available")
+                        .font(.system(size: 16))
+                        .foregroundColor(.gray)
+                    Spacer()
+                } else {
+                    // Crop listings
+                    ScrollView {
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(), spacing: 16),
+                            GridItem(.flexible(), spacing: 16)
+                        ], spacing: 16) {
+                            ForEach(filteredCrops) { crop in
+                                CropListingCard(crop: crop)
+                            }
                         }
+                        .padding()
                     }
-                    .padding()
+                    .background(Color.grayBackground)
                 }
-                .background(Color.grayBackground)
             }
             .navigationTitle("Marketplace")
+            .onAppear {
+                loadMarketplaceCrops()
+            }
+        }
+    }
+    
+    private func loadMarketplaceCrops() {
+        isLoading = true
+        Task {
+            do {
+                try await userManager.fetchMarketplaceCrops()
+                DispatchQueue.main.async {
+                    isLoading = false
+                }
+            } catch {
+                print("Error loading marketplace crops: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    isLoading = false
+                }
+            }
         }
     }
 }
@@ -122,21 +146,34 @@ struct CategoryButton: View {
 
 struct CropListingCard: View {
     let crop: CropListing
+    @State private var cropImage: UIImage? = nil
     
     var body: some View {
         VStack(alignment: .leading) {
-            // Image placeholder (in a real app, you'd use AsyncImage or similar)
+            // Image placeholder with actual image loading
             ZStack {
                 Rectangle()
                     .fill(Color.gray.opacity(0.2))
                     .aspectRatio(1, contentMode: .fit)
                     .cornerRadius(10)
                 
-                Image(systemName: "leaf.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(.primaryGreen)
+                if let image = cropImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.width / 2 - 24, height: UIScreen.main.bounds.width / 2 - 24)
+                        .cornerRadius(10)
+                        .clipped()
+                } else {
+                    Image(systemName: "leaf.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.primaryGreen)
+                }
+            }
+            .onAppear {
+                loadImage()
             }
             
             VStack(alignment: .leading, spacing: 4) {
@@ -171,10 +208,37 @@ struct CropListingCard: View {
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
     }
+    
+    private func loadImage() {
+        // If it's a system image name, use that
+        if UIImage(named: crop.image) != nil {
+            cropImage = UIImage(named: crop.image)
+            return
+        }
+        
+        // Otherwise, try to load from documents directory (for user-uploaded images)
+        if crop.image.hasPrefix("crop_") {
+            cropImage = UserManager.shared.loadImageFromDocuments(named: crop.image)
+            return
+        }
+    }
+}
+
+// Helper function to load images from documents directory
+func loadImageFromDocuments(named: String) -> UIImage? {
+    let fileManager = FileManager.default
+    let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+    let fileURL = documentsDirectory.appendingPathComponent(named)
+    
+    if fileManager.fileExists(atPath: fileURL.path) {
+        return UIImage(contentsOfFile: fileURL.path)
+    }
+    
+    return nil
 }
 
 struct CropListing: Identifiable {
-    let id: Int
+    let id: UUID
     let name: String
     let seller: String
     let price: Double

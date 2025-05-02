@@ -31,10 +31,10 @@
         }
       }
     },
-    "%@ Status" : {
+    "%lld%%" : {
 
     },
-    "%lld" : {
+    "%lld°C" : {
 
     },
     "$%@" : {
@@ -43,13 +43,7 @@
     "1.0.0" : {
 
     },
-    "28°C" : {
-
-    },
-    "70%" : {
-
-    },
-    "Add Task" : {
+    "Add your first crop" : {
 
     },
     "Already have an account?" : {
@@ -109,6 +103,9 @@
           }
         }
       }
+    },
+    "Back" : {
+
     },
     "Bringing you closer to nature! Learn about sustainable farming, connect with passionate growers, and enjoy farm-to-table freshness." : {
       "extractionState" : "manual",
@@ -180,6 +177,9 @@
       }
     },
     "Dark Mode" : {
+
+    },
+    "Description" : {
 
     },
     "Didn’t receive a code?" : {
@@ -290,7 +290,13 @@
         }
       }
     },
-    "Humidity: 65%" : {
+    "Growth Progress: %lld%%" : {
+
+    },
+    "Humidity: %lld%%" : {
+
+    },
+    "Identifying plant..." : {
 
     },
     "Invalid Email or password." : {
@@ -337,6 +343,16 @@
         }
       }
     },
+    "Location: %@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Location: %1$@, %2$@"
+          }
+        }
+      }
+    },
     "Logout" : {
 
     },
@@ -356,6 +372,9 @@
           }
         }
       }
+    },
+    "My Crops" : {
+
     },
     "My Farm" : {
 
@@ -385,7 +404,10 @@
         }
       }
     },
-    "Next watering: Today" : {
+    "No crops available" : {
+
+    },
+    "No crops yet" : {
 
     },
     "No favorites yet" : {
@@ -401,6 +423,12 @@
           }
         }
       }
+    },
+    "Phone Number" : {
+
+    },
+    "Planted: %@" : {
+
     },
     "Please provide correct email address" : {
       "extractionState" : "manual",
@@ -463,13 +491,7 @@
         }
       }
     },
-    "Score" : {
-
-    },
     "Search crops" : {
-
-    },
-    "Select a Crop" : {
 
     },
     "Select Language" : {
@@ -533,10 +555,10 @@
         }
       }
     },
-    "Sunny" : {
+    "Terms of Service" : {
 
     },
-    "Terms of Service" : {
+    "Type: %@" : {
 
     },
     "Verify" : {
@@ -574,6 +596,9 @@
           }
         }
       }
+    },
+    "Weather data unavailable" : {
+
     },
     "Welcome Abroad!" : {
       "extractionState" : "manual",
@@ -619,7 +644,7 @@
         }
       }
     },
-    "Wind: 8 km/h" : {
+    "Wind: %lld km/h" : {
 
     },
     "Your trusted AI Legal Assistant – intelligent, efficient, and always ready to help!" : {
